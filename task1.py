@@ -1,16 +1,8 @@
-# This is a sample Python script.
+lessons = ["8:30-9:15", "9:25-10:10", "10:20-11:05", "11:15-12:00", "12:30-13:15", "13:15-14:10", "15:15-15:55", "16:00-16:40", "16:50-17:30", "18:00-18:40", "18:50-19:30", "20:15-20:55", "21:05-21:45"]
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+n = int(input("Введите номер урока: "));
+if(n<1 or n> 13):
+    print("Введите другой номер")
+else:
+    print(lessons[n-1])
+#Если что я брал расписание с боты в тг от фмш.
